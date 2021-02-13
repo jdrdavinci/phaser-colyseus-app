@@ -8,7 +8,7 @@
 		"build": "parcel build src/client/index.html --out-dir dist",
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"lint": "eslint ./src --ext .js,.jsx,.ts,.tsx",
-		"heroku-postbuild": "parcel build src/client/index.html"
+		"heroku-postbuild": "npm run build"
 	},
 	"author": "supertommy",
 	"license": "MIT",
