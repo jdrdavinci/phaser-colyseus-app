@@ -8,7 +8,7 @@
 		"build": "parcel build src/client/index.html --out-dir dist",
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"lint": "eslint ./src --ext .js,.jsx,.ts,.tsx",
-		"heroku-postbuild": "npm run build"
+		"heroku-postbuild" : "parcel build src/client/index.html"
 	},
 	"author": "supertommy",
 	"license": "MIT",
@@ -37,8 +37,7 @@
 		"cors": "^2.8.5",
 		"express": "^4.16.4",
 		"phaser": "^3.50.1",
-		"regenerator-runtime": "^0.13.7",
-		"parcel-bundler": "^1.12.4"
+		"regenerator-runtime": "^0.13.7"
 	},
 	"parcelCleanPaths": [
 		"dist"
